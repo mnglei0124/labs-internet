@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --primary: #13124f;
+  --secondary: #1b1b6c;
+  --gurawdah: #352ba5;
+  --red: #f61067;
+  --green: #2ad392;
+  --zurgaadah: #9090a5;
+}
+/* time to reset some sh*t */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+body {
+  line-height: 1;
+}
+menu,
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* f*cking defualt button styles */
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+/* need some font? */
+body,
+html {
+  font-family: 'Lato', system-ui;
+  height: 100vh;
+}
+.header {
+  height: 56px;
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.header .logo_img {
+  height: 28px;
+}
+.header a {
+  display: flex;
+}
+.helloworld,
+footer {
+  background-color: var(--primary);
+  padding: 80px 24px;
+  color: white;
+}
+h1 {
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.helloworld p {
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.container {
+  height: 100%;
+  display: flex;
+  grid-gap: 24px;
+  padding: 40px 24px;
+  font-weight: 500;
+}
+.content {
+  flex: none;
+  width: 66.66667%;
+}
+.container h1 {
+  font-size: 38px;
+  font-weight: 400;
+}
+button.primary {
+  background-color: var(--red);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px;
+  color: white;
+}
+footer {
+  padding: 12px;
+  font-weight: 600;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.br {
+  border-bottom: 0.1rem solid #9090a54f;
+  margin: 32px 0;
+}
+iframe {
+  margin: 40px 0;
+  width: 100%;
+  height: 50%;
+}
+.sidebar {
+  flex: none;
+  width: 32%;
+}
+.stickit {
+  width: 100%;
+  position: sticky;
+  top: 85px;
+}
+.sidebar button {
+  width: 100%;
+}
+.form .title {
+  padding: 12px;
+  background-color: var(--zurgaadah);
+  color: white;
+  font-weight: 700;
+}
+.form form {
+  background-color: var(--secondary);
+  color: white;
+  padding: 12px;
+}
+form p {
+  font-size: 14px;
+}
+form input {
+  background-color: var(--primary);
+  border: none;
+  background-image: none;
+  box-shadow: none;
+  margin: 8px 0;
+  height: 24px;
+  font-size: 14px;
+  width: 100%;
+  color: white;
+}
+form input:focus {
+  border: none;
+  outline: none;
+}
+.form_footer {
+  background-color: var(--gurawdah);
+  padding: 12px;
+  font-size: 12px;
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+}
+.form_footer p {
+  cursor: pointer;
+}
+.vote {
+  border: 0.1rem solid #9090a54f;
+  padding: 12px;
+}
+.vote p {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.vote progress {
+  accent-color: var(--red);
+  width: 100%;
+}
+.form,
+.vote {
+  margin-top: 12px;
+}
+.buttons {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+button.secondary {
+  background-color: transparent;
+  border: 2px solid var(--green);
+  color: var(--green);
+}
+.notice {
+  background-color: var(--zurgaadah);
+  color: white;
+  padding: 18px 12px;
+  font-weight: 700;
+}
+
+/* Mobile Styles (up to 600px wide) */
+@media (max-width: 600px) {
+  .header {
+    height: 48px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 20px 12px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  button.primary {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+/* Tablet Styles (up to 900px wide) */
+@media (max-width: 900px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .container {
+    padding: 30px 16px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Desktop Styles (from 900px and up) */
+@media (min-width: 901px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 24px;
+  }
+
+  .content {
+    width: 66.66667%;
+  }
+
+  .sidebar {
+    width: 32%;
+  }
+}
